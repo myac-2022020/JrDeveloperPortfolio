@@ -17,6 +17,7 @@ a{
     position: absolute;
     width: 70vw;
     height: 70vh;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -123,7 +124,7 @@ a{
     position: absolute;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 80%;
     min-height: 7vh;
     margin: 1% 1% 0 0;
     background-color: #fff;
@@ -181,7 +182,7 @@ a{
   left: 0;
 }
 .menu1{
-  margin-left: 2rem;
+  margin-left: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
   font-style: italic;
