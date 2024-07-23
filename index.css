@@ -406,7 +406,7 @@ a {
 }
 
 .experience:hover {
-    height: 60vh;
+    height: 45vh;
     background-color: #030731ee;
     padding-bottom: 2%;
 }
@@ -445,4 +445,27 @@ a {
     .experience {
         width: calc(100% - 1rem);
     }
+}
+.projects{
+    width: 70%;
+    height: 60%;
+    background-color: #fff;
+    padding: 1%;
+    transition-duration: 0.5s;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+}
+.projects:hover{
+    width: 70%;
+    height: 60%;
+    margin-left: 10%;
+    background-color: #fff;
+    padding: 1%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.content-experience{
+    font-family: 'Ministry of Moron', sans-serif;
+    font-style: italic;
+    color: #000000ee;
 }
