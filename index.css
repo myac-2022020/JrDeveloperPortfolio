@@ -451,13 +451,29 @@ a {
 }
 
 .project {
-    width: 70%;
-    height: 60%;
     background-color: var(--bg-color);
-    padding: 1%;
+    height: 60vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    transition: all 0.5s;
 }
 
 .text-project {
-    color: var(--text-color);
     font-family: 'BastamanBold', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 1rem;
+    font-style: italic;
+}
+
+.imagen-proyecto {
+    height: 100%;
+    width: auto;
+    border-bottom-left-radius: 15px;
 }
