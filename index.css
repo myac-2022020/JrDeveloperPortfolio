@@ -477,3 +477,20 @@ a {
     width: auto;
     border-bottom-left-radius: 15px;
 }
+.view-project{
+    background: none;
+    border: none; 
+    padding: 0;
+    margin: 0;
+    font: inherit; 
+    cursor: pointer;
+    outline: none; 
+    box-shadow: none;
+    background-color: rgba(0, 0, 0,0.5);
+    color: #fff;
+    width: 10rem;
+    height: 2rem;
+    font-family: 'BastamanBold', sans-serif;
+    display: flex;
+    align-items: center;
+}
