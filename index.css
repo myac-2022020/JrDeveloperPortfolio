@@ -453,7 +453,7 @@ a {
 .project {
     background-color: var(--bg-color);
     height: 60vh;
-    width: 95vw;
+    width: 90vw;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -467,7 +467,7 @@ a {
 .text-project {
     font-family: 'BastamanBold', sans-serif;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 1rem;
     font-style: italic;
 }
