@@ -543,19 +543,26 @@ footer{
   }
 }
 
-@media (min-width: 800px){
-  .profile_card{
-    margin: 3vw;
-    width: 80vw;
-    height: auto;
-    background-color: #fefefe;
-    border-radius: 1rem;
-    color: #141417;
-    position: relative;
+@media (max-width: 1024px) {
+  .profile-card {
+    width: 40vw; /* Aumenta el tamaño para adaptarse mejor */
+    margin: 5vw auto; /* Centra el perfil */
   }
+}
 
-  .link-icon{
-    width: 10%;
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 80vw; /* Ocupa la mayor parte del ancho */
+    margin: 5vw auto;
+  }
+}
+
+/* Para pantallas muy pequeñas (teléfonos compactos) */
+@media (max-width: 480px) {
+  .profile-card {
+    width: 90vw;
+    margin: 3vw auto;
   }
 }
 
