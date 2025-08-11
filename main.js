@@ -79,6 +79,23 @@ function updateClock() {
     document.getElementById('greeting').innerHTML = `${message}`
 }
 
+const toggle = document.getElementById('dark-toggle')
+const icon = toggle.querySelector('.icon')
+
+// Cargar preferencia guardada
+if (localStorage.getItem('dark') === 'true') {
+  document.body.classList.add('dark-mode')
+  icon.textContent = '☀️'
+}
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode')
+  const darkMode = document.body.classList.contains('dark-mode')
+  icon.textContent = darkMode ? '☀️' : '🌙'
+  localStorage.setItem('dark', darkMode)
+})
+
+
 // Cambia el fondo dinámicamente según la hora
 function updateBackground() {
     const now = new Date()
