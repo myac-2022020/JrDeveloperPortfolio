@@ -61,22 +61,27 @@ document.querySelector('.direct-message')
       })
   })
 
-// Actualiza la hora y la fecha
+// Actualiza la hora
 function updateClock() {
     const now = new Date()
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
     const time = now.toLocaleTimeString()
-    const date = now.toLocaleDateString('es-ES', options)
     document.getElementById('clock').innerHTML = `${time}`
-    document.getElementById('date').innerHTML = `${date}`
 
     const hours = now.getHours()
-    const message = hours < 12 
-      ? 'Good Morning!!!' 
-      : hours < 18 
-      ? 'Good afternoon!'
-      : 'Good evening!'
+    const message = hours < 12
+    ? 'Good morning'
+    : hours < 18
+    ? 'Good afternoon'
+    : 'Good evening'
     document.getElementById('greeting').innerHTML = `${message}`
+}
+
+// Actualiza la fecha
+function updateDate(){
+  const now = new Date()
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
+  const date = now.toLocaleDateString('en-US', options)
+  document.getElementById('date').innerHTML = `${date}`
 }
 
 const toggle = document.getElementById('dark-toggle')
@@ -122,3 +127,4 @@ setInterval(updateBackground, 60000)
 setInterval(updateClock, 1000)
 updateBackground()
 updateClock()
+updateDate()
